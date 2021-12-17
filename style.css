@@ -1,0 +1,72 @@
+body {
+    margin:0px;
+    padding:0px;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+aside {
+    width: 20vw;
+    height: 100vh;
+    grid-column:auto;
+    grid-row:1 / 19;
+    background-color: #C4C4C4;
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(10, 60px);
+}
+.blocco {
+    width: 100%;
+    height: 55px;
+    background-color: #EEEEEE;
+    grid-column: 2 / 6;
+    grid-row:2;
+}
+input {
+    background-color:#C4C4C4;
+    width: 221px;
+    height: 36px;
+    border-radius: 5px;
+}
+label {
+    grid-row: 2;
+    grid-column: 3 / 6;
+}
+.DH {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background: #C4C4C4;
+    border-radius: 5px;
+    width: min-content;
+    height: min-content;
+    padding: 4px;
+    grid-column:-2;
+    grid-row: 2;
+}
+.cerchio {
+    background: #C4C4C4;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    grid-column: -2;
+    grid-row: 17;
+}
+@media screen and (max-width:414px) {
+    aside {
+    background-color: white;
+    }
+    label {
+        visibility: collapse;
+    }
+    .blocco {
+        width: 113px;
+        height: 34px;
+    }
+}
